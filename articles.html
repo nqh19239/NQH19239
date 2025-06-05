@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tất Cả Bài Viết | NQH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-xl font-bold gradient-text">NQH</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-blue-600 transition">About</a>
+                    <a href="index.html#skills" class="text-gray-700 hover:text-blue-600 transition">Skills</a>
+                    <a href="index.html#articles" class="text-gray-700 hover:text-blue-600 transition">Projects</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-700">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
+            <a href="index.html#home" class="block py-2 text-gray-700 hover:text-blue-600 transition">Home</a>
+            <a href="index.html#about" class="block py-2 text-gray-700 hover:text-blue-600 transition">About</a>
+            <a href="index.html#skills" class="block py-2 text-gray-700 hover:text-blue-600 transition">Skills</a>
+            <a href="index.html#articles" class="block py-2 text-gray-700 hover:text-blue-600 transition">Projects</a>
+            <a href="index.html#contact" class="block py-2 text-gray-700 hover:text-blue-600 transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Articles Section -->
+    <section id="all-articles" class="py-20 bg-white pt-24">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-16">Tất Cả <span class="gradient-text">Bài Viết</span></h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Quản lý thời gian" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Quản Lý Thời Gian: Bí Quyết Tăng Năng Suất</h3>
+                        <p class="text-gray-600 mb-4">Tìm hiểu các phương pháp quản lý thời gian để làm việc hiệu quả và cân bằng cuộc sống.</p>
+                        <a href="article1.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Quản lý thời gian">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Sống tối giản" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sống Tối Giản: Giảm Bớt Để Sống Nhiều Hơn</h3>
+                        <p class="text-gray-600 mb-4">Khám phá lối sống tối giản giúp bạn tập trung vào những điều thực sự quan trọng.</p>
+                        <a href="article2.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Sống tối giản">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Sức mạnh của âm nhạc" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sức Mạnh Của Âm Nhạc Trong Cuộc Sống</h3>
+                        <p class="text-gray-600 mb-4">Âm nhạc ảnh hưởng đến cảm xúc và năng suất của chúng ta như thế nào.</p>
+                        <a href="article3.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Sức mạnh của âm nhạc">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 4 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tình bạn trong cuộc sống" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tình Bạn: Nền Tảng Của Một Cuộc Sống Hạnh Phúc</h3>
+                        <p class="text-gray-600 mb-4">Vai trò của tình bạn trong việc xây dựng một cuộc sống ý nghĩa.</p>
+                        <a href="article4.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Tình bạn trong cuộc sống">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 5 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1504333638930-c8787321eee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Khám phá không gian" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Khám Phá Không Gian: Giấc Mơ Vươn Tới Các Vì Sao</h3>
+                        <p class="text-gray-600 mb-4">Hành trình của nhân loại trong việc khám phá vũ trụ và những bài học cho cuộc sống.</p>
+                        <a href="article5.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Khám phá không gian">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Article 6 -->
+                <div class="article-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 hover:transform hover:-translate-y-1 hover:shadow-xl">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tài chính cá nhân" class="w-full h-full object-cover" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tài Chính Cá Nhân: Hành Trang Cho Tương Lai</h3>
+                        <p class="text-gray-600 mb-4">Học cách quản lý tiền bạc để đạt được tự do tài chính.</p>
+                        <a href="article6.html" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center" aria-label="Xem bài viết về Tài chính cá nhân">
+                            Xem Bài Viết <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="index.html" class="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-gray-50 hover:border-blue-600 hover:text-blue-600 transition font-medium">
+                    Quay Lại Trang Chủ <i class="fas fa-arrow-left ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="text-2xl font-bold gradient-text">NQH</a>
+                    <p class="text-gray-400 mt-2">Creating digital experiences that matter.</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="index.html#home" class="text-gray-400 hover:text-white transition">Home</a>
+                    <a href="index.html#about" class="text-gray-400 hover:text-white transition">About</a>
+                    <a href="index.html#skills" class="text-gray-400 hover:text-white transition">Skills</a>
+                    <a href="index.html#articles" class="text-gray-400 hover:text-white transition">Projects</a>
+                    <a href="index.html#contact" class="text-gray-400 hover:text-white transition">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 NQH. All rights reserved.</p>
+                
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/nguyen.quang.huy.833398/?locale=vi_VN" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all">
+        <i class="fas fa-arrow-up"></i>
+        <span class="sr-only">Quay lại đầu trang</span>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (menuBtn && mobileMenu) {
+            menuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Back to top button
+        const backToTopBtn = document.getElementById('back-to-top');
+        if (backToTopBtn) {
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.remove('opacity-0', 'invisible');
+                    backToTopBtn.classList.add('opacity-100', 'visible');
+                } else {
+                    backToTopBtn.classList.remove('opacity-100', 'visible');
+                    backToTopBtn.classList.add('opacity-0', 'invisible');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
